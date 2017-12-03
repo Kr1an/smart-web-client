@@ -13,7 +13,7 @@ export class Menu extends React.Component { // eslint-disable-line react/prefer-
   render() {
     return (
       <Wrapper>
-        <Placeholder componentTitle="Menu Tab" />
+        <Placeholder componentTitle="Statistic" />
       </Wrapper>
     );
   }

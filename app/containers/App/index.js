@@ -20,7 +20,7 @@ import NotFoundPage from 'containers/NotFoundPage';
 import Templates from 'containers/Templates';
 import Pages from 'containers/Pages';
 import Menu from 'containers/Menu';
-import HomePage from 'containers/HomePage';
+import Home from 'containers/Home';
 import Structure from 'containers/Structure';
 
 import Wrapper from './Wrapper';
@@ -37,11 +37,11 @@ export default class App extends React.Component { // eslint-disable-line react/
       <Wrapper>
         <Navbar />
         <Switch>
-          <Route exact path="/home" component={HomePage} />
-          <Route path="/templates" component={Templates} />
-          <Route path="/pages" component={Pages} />
-          <Route path="/menu" component={Menu} />
-          <Route path="/structure" component={Structure} />
+          <Route exact path="/home" component={Home} />
+          <Route path="/behavior" component={Templates} />
+          <Route path="/schedule" component={Pages} />
+          <Route path="/statistic" component={Menu} />
+          <Route path="/settings" component={Structure} />
           <Route path="/" render={() => <Redirect to="/home" />} />
 
           <Route path="*" component={NotFoundPage} />

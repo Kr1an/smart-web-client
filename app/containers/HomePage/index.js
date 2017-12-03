@@ -17,7 +17,7 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
   render() {
     return (
       <Wrapper>
-        <Placeholder componentTitle="Overview" />
+        <Placeholder componentTitle="Home" />
       </Wrapper>
     );
   }

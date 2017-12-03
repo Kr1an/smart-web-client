@@ -12,22 +12,22 @@ export default defineMessages({
   },
   home: {
     id: 'app.components.Navbar.home',
-    defaultMessage: 'Overview',
+    defaultMessage: 'Home',
   },
   templates: {
     id: 'app.components.Navbar.templates',
-    defaultMessage: 'Templates',
+    defaultMessage: 'Behavior',
   },
   menu: {
     id: 'app.components.Navbar.menu',
-    defaultMessage: 'Menu',
+    defaultMessage: 'Statistic',
   },
   pages: {
     id: 'app.components.Navbar.pages',
-    defaultMessage: 'Pages',
+    defaultMessage: 'Schedule',
   },
   structure: {
     id: 'app.components.Navbar.structure',
-    defaultMessage: 'Structure',
+    defaultMessage: 'Settings',
   },
 });

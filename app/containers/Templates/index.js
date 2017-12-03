@@ -11,6 +11,7 @@ import {
   graphql,
 } from 'react-apollo';
 import Wrapper from 'components/Wrapper';
+import Placeholder from 'components/Placeholder';
 import LoadingWrapper from 'components/LoadingWrapper';
 import Template from 'containers/Template';
 import TemplateCreator from 'containers/TemplateCreator';
@@ -32,12 +33,13 @@ export class Templates extends React.Component { // eslint-disable-line react/pr
 
     return (
       <Wrapper>
-        <LoadingWrapper loading={loading} error={error}>
+        <Placeholder componentTitle="Behavior" />
+        {/* <LoadingWrapper loading={loading} error={error}>
           <div>
             <TemplateCreator onUpdate={() => this.props.data.refetch()} />
             <List component={Template} items={sortedTemplates} onUpdate={() => this.props.data.refetch()} />
           </div>
-        </LoadingWrapper>
+        </LoadingWrapper> */}
       </Wrapper>
     );
   }

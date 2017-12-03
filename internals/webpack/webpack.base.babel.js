@@ -75,6 +75,7 @@ module.exports = (options) => ({
       'process.env': {
         NODE_ENV: JSON.stringify(process.env.NODE_ENV),
       },
+      'process.env.BASE_API_URL': JSON.stringify(process.env.BASE_API_URL),
     }),
     new webpack.NamedModulesPlugin(),
   ]),

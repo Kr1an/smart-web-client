@@ -11,10 +11,11 @@ import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import {
   MdCode as TemplatesIcon,
-  MdContentCopy as PagesIcon,
   MdInsertLink as MenuIcon,
   MdSettings as StructureIcon,
   MdApps as HomeIcon,
+  MdSchedule,
+  MdLibraryBooks,
 } from 'react-icons/lib/md';
 
 import NavbarLink from './NavbarLink';
@@ -40,17 +41,24 @@ class Navbar extends React.Component {
     'pages',
     'structure',
   ]
+  routes = {
+    home: 'home',
+    templates: 'behavior',
+    menu: 'statistic',
+    pages: 'schedule',
+    structure: 'settings',
+  }
   icons = {
     home: HomeIcon,
     templates: TemplatesIcon,
-    menu: MenuIcon,
-    pages: PagesIcon,
+    menu: MdLibraryBooks,
+    pages: MdSchedule,
     structure: StructureIcon,
   }
   LiContentGEnerator = (path) => {
     const IconComponent = this.icons[path];
     return (
-      <NavbarLink to={`/${path}`}>
+      <NavbarLink to={`/${this.routes[path]}`}>
         <IconComponent />
         <MobileHide>
           <FormattedMessage {...messages[path]} />
